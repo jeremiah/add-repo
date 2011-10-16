@@ -3,3 +3,6 @@ add-repo adds a new git repo to a local file system.
 This software is alpha quality - hic sunt dracones.
 
 The purpose of this software is merely a little bit of glue that helps me manage git repos. 
+
+
+SEE ALSO: Git::Repository by BooK
