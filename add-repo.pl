@@ -6,7 +6,7 @@ add-repo.pl       Add a version control repository to local file system.
 
 =head1 VERSION
 
-Version 0.03
+Version 0.11
 
 =head1 SYNOPSIS
 
