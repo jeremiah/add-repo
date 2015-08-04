@@ -45,10 +45,10 @@ Create a git or svn repo ready to serve.
 addrepo -t git --url https://git.example.org/srv/git --repo /srv/git/ -n foo.git -d "A repository for foo"
 
 # Create a svn repo
-addrepo -t svn --url https://svn.genivi.org/ -n foo
+addrepo -t svn --url https://svn.example.org/ -n foo
 
 # Create a git repo ready to serve from your local git repo
-addrepo -t git --url https://git.example.org/srv/git --repo /srv/git/ -n foo.git -l 
+addrepo -t git --url https://git.example.org/srv/git --repo /srv/git/ -n foo.git -l
 
 =cut
 
@@ -180,7 +180,7 @@ sub test_repo {
     # print "Testing $url\n";
     eval { @clone = capturex('git', 'clone', $url, "$temp/$repo") };
     print map { $_ . "\n" } @clone if $@;
-    #print "Checking $temp/$repo.\n";
+    #Print "Checking $temp/$repo.\n";
    ok(-d "$temp/$repo", 'Created new repository dir.');
   }
   elsif ($kind eq 'svn') {
